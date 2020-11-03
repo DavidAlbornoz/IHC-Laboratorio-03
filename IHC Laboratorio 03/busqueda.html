@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="img/lindavista.png" />
+
+    <h1 class="Title">
+        Inmobiliaria Lindavista
+    </h1>
+
+    <h2>
+        Búsqueda de vivienda
+    </h2>
+
+    <p>
+        Ayúdenos a encontrar la vivienda que mejor se ajusta a sus necesidades. Por favor, rellene cuidadosamente el siguiente formulario.
+    </p>
+
+    <section class="BlueRectangle">
+        Datos personales
+    </section>
+
+    <section class="LightBlueRectangle">
+        <form name="form" method="post" action="http://www.lsi.us.es/cursos/cursophp/dihm/busca_vivienda.php">
+
+            <p>
+                Nombre&nbsp&nbsp&nbsp&nbsp
+                <input name="nombre" type="text" class="leftSeparation" size="35" />
+            </p>
+
+            <p>
+                Edad &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="radio" name="edad" class="leftSeparation" value="h" /> Menos de 20
+                <input type="radio" name="edad" class="leftSeparation" value="m" /> De 21 a 30
+                <input type="radio" name="edad" class="leftSeparation" value="h" /> De 31 a 40
+                <input type="radio" name="edad" class="leftSeparation" value="m" /> Más de 40
+            </p>
+
+            <p>
+                Profesión &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <select name="profesion" class="leftSeparationBox">
+                    <option>Seleccione una profesión</option>
+                    <option>Funcionario</option>
+                    <option>Profesión Liberal</option>
+                    <option>Empresario</option>
+                    <option>Artista</option>
+                    <option>Deportista</option>
+                </select>
+            </p>
+
+    </section>
+
+
+
+    <section class="BlueRectangle">
+        Datos de la vivienda buscada
+    </section>
+
+    <section class="LightBlueRectangle">
+        <p>
+            Dormitorios&nbsp&nbsp&nbsp
+            <input type="radio" name="dormitorios" class="leftSeparation" value="h" /> 1
+            <input type="radio" name="dormitorios" class="leftSeparation" value="m" /> 2
+            <input type="radio" name="dormitorios" class="leftSeparation" value="h" /> 3
+            <input type="radio" name="dormitorios" class="leftSeparation" value="m" /> 4
+            <input type="radio" name="dormitorios" class="leftSeparation" value="m" /> 5
+        </p>
+
+        <p>
+            Tipo&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <select name="tipo" class="leftSeparation">
+                  <option>Seleccione un tipo</option>
+                  <option>Piso</option>
+                  <option>Adosado</option>
+                  <option>Chalet</option>
+                  <option>Casa</option>
+            </select>
+        </p>
+
+        <p>
+            Precio (€) &nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="radio" name="precio" class="leftSeparation" value="h" />
+            < 100000 <input type="radio" name="precio" value="m" /> 100000 - 200000
+            <input type="radio" name="precio" class="leftSeparation" value="h" /> 200000 - 300000
+            <input type="radio" name="precio" class="leftSeparation" value="m" /> > 300000
+        </p>
+
+        <p>Zona</p>
+        <p>
+            <select name="zona" class="leftSeparationZone" size="6">
+                  <option selected>Seleccione una o más zonas</option>
+                  <option>Centro</option>
+                  <option>Nervion</option>
+                  <option>Triana</option>
+                  <option>Afjarafe</option>
+                  <option>Macarena</option>
+            </select>
+        </p>
+
+        <p>
+            Extras&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="checkbox" name="extras" class="leftSeparation" value="h" /> Piscina
+            <input type="checkbox" name="extras" class="leftSeparation" value="m" /> Jardin
+            <input type="checkbox" name="extras" class="leftSeparation" value="h" /> Garage
+            <input type="checkbox" name="extras" class="leftSeparation" value="m" /> Sauna
+        </p>
+
+    </section>
+
+    <br />
+
+    <input type="checkbox" name="incluir" value="m" /> Deseo recibir información acerca de futuras promociones de inmobiliaria Lindavista
+    <br />
+    <br />
+    <input name="enviar" type="submit" class="leftSeparation" value="Enviar formulario" />
+    <input name="borrar" type="reset" class="leftSeparation" value="Borrar formulario" />
+
+    <br />
+    <br />
+
+    <hr />
+
+    <p class="Cursive">
+        Inmoviliaria Lindavista <br /> Construimos un mundo mejor para usted
+    </p>
+
+    <hr />
+
+    <footer>Terminado</footer>
+    <script src="js/function.js"></script>
+
+</body>
+
+</html>
